@@ -59,7 +59,7 @@ class TankErect extends BaseStage {
 		gooeyCutSound.volume = 1;
 
 		// Replace with a more generic character method
-		game.gf().animation.play('tankFrozen', true, true);
+		gf.animation.play('tankFrozen', true, true);
 
 		// Modify skip text creation
 		skipText = new FlxText(936, 618, 0, 'Skip [ ENTER ]', 20);
