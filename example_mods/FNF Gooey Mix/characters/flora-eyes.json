@@ -1,84 +1,63 @@
 {
-  "image": "characters/flora/FloraEyes",
-  "scale": 1,
-  "flip_x": true,
-  "position": [
-    0,
-    0
-  ],
-  "camera_position": [
-    0,
-    120
-  ],
-  "healthicon": "flora",
-  "sing_duration": 8.0,
-  "animations": [
-    {
-      "anim": "danceLeft",
-      "name": "idleLeft",
-      "fps": 24,
-      "loop": false,
-      "offsets": [
-        -20,
-        180
-      ],
-      "indices": []
-    },
-    {
-      "anim": "danceRight",
-      "name": "idleRight",
-      "fps": 24,
-      "loop": false,
-      "offsets": [
-        -20,
-        180
-      ],
-      "indices": []
-    },
-    {
-      "anim": "combo50",
-      "name": "combo50",
-      "fps": 24,
-      "loop": false,
-      "offsets": [
-        -20,
-        180
-      ],
-      "indices": []
-    },
-    {
-      "anim": "combo200",
-      "name": "combo200",
-      "fps": 24,
-      "loop": false,
-      "offsets": [
-        -20,
-        180
-      ],
-      "indices": []
-    },
-    {
-      "anim": "drop70",
-      "name": "comboBreak",
-      "fps": 24,
-      "loop": false,
-      "offsets": [
-        -20,
-        180
-      ],
-      "indices": []
-    },
-    {
-      "anim": "scared",
-      "name": "scared",
-      "fps": 24,
-      "loop": false,
-      "offsets": [
-        -20,
-        180
-      ],
-      "indices": []
-    }
-  ],
-  "fps": 24
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-20, 180],
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "idleLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-20, 180],
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "idleRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-20, 180],
+			"anim": "combo50",
+			"fps": 24,
+			"name": "combo50",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-20, 180],
+			"anim": "combo200",
+			"fps": 24,
+			"name": "combo200",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-20, 180],
+			"anim": "drop70",
+			"fps": 24,
+			"name": "comboBreak",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-20, 180],
+			"anim": "scared",
+			"fps": 24,
+			"name": "scared",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/flora/FloraEyes",
+	"position": [-90, 150],
+	"healthicon": "flora",
+	"flip_x": true,
+	"healthbar_colors": [244, 196, 124],
+	"camera_position": [0, 120],
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
 }

@@ -1,5 +1,7 @@
 package objects;
 
+import animateatlas.AtlasFrameMaker;
+
 import backend.animation.PsychAnimationController;
 
 import flixel.util.FlxSort;
@@ -20,12 +22,38 @@ typedef CharacterFile = {
 
 	var position:Array<Float>;
 	var camera_position:Array<Float>;
+	var rating_position:Array<Float>;
 
 	var flip_x:Bool;
 	var no_antialiasing:Bool;
 	var healthbar_colors:Array<Int>;
+
+	var bfflip_X:Bool;
+	var opponentflip_X:Bool;
+
+	var maxhealth:Float;
+	var minhealth:Float;
+
+	// multiple characters stuff
+	var characters:Array<CharacterData>;
+
+	// shaggy
+	var trail:Null<Bool>;
+	var trailLength:Null<Int>;
+	var trailDelay:Null<Int>;
+	var trailStalpha:Null<Float>;
+	var trailDiff:Null<Float>;
+
+
 	var vocals_file:String;
 	@:optional var _editor_isPlayer:Null<Bool>;
+}
+
+typedef CharacterData =
+{
+	var name:String;
+	var positionArray:Array<Float>;
+	var positionOffset:Array<Float>;
 }
 
 typedef AnimArray = {
@@ -39,6 +67,13 @@ typedef AnimArray = {
 
 class Character extends FlxSprite
 {
+	public var bfflip_X:Bool = false;
+	public var opponentflip_X:Bool = false;
+
+	public var ratingPosition:Array<Float> = [0, 0];
+
+	public var otherCharacters:Array<Character>;
+
 	/**
 	 * In case a character is missing, it will use this on its place
 	**/
@@ -79,6 +114,93 @@ class Character extends FlxSprite
 	public var originalFlipX:Bool = false;
 	public var editorIsPlayer:Null<Bool> = null;
 
+	public var maxhealth:Float = 2; //maxhealth Bar & Max Health
+	public var minhealth:Float = 0; //MinHealth Bar & Min Health
+
+	public var coolTrail:FlxPerspectiveTrail;
+
+
+	function loadNamedConfiguration(config:CharacterFile)
+	{
+		if(config.characters == null || config.characters.length <= 1)
+		{
+			return;
+		}
+		else
+		{
+			otherCharacters = [];
+
+			for(characterData in config.characters)
+			{
+				var character:Character;
+
+				if(!isPlayer)
+					character = new Dad(x, y, characterData.name);
+				else
+					character = new Boyfriend(x, y, characterData.name);
+
+				if (characterData.positionArray == null)
+				{
+					if(flipX)
+						characterData.positionOffset[0] = 0 - characterData.positionOffset[0];
+	
+					character.positionArray[0] += characterData.positionOffset[0];
+					character.positionArray[1] += characterData.positionOffset[1];					
+				}
+				else
+				{
+					if(flipX)
+						characterData.positionArray[0] = 0 - characterData.positionArray[0];
+	
+					character.positionArray[0] += characterData.positionArray[0];
+					character.positionArray[1] += characterData.positionArray[1];
+				}
+			
+				otherCharacters.push(character);
+
+				if(config.camera_position != null)
+				{
+					if(flipX)
+						config.camera_position[0] = 0 - config.camera_position[0];
+					
+					cameraPosition = config.camera_position;
+				}
+			}
+		}
+
+		if (config.maxhealth >= 0)
+			maxhealth = config.maxhealth;
+		else
+			maxhealth = 2;
+		
+		if (config.minhealth <= config.maxhealth)
+			minhealth = config.minhealth;
+		else
+			minhealth = 0;
+		
+		if(config.scale != 1) {
+			jsonScale = config.scale;
+			setGraphicSize(Std.int(width * jsonScale));
+			updateHitbox();
+		}
+
+		positionArray = config.position;
+
+		healthIcon = config.healthicon;
+		singDuration = config.sing_duration;
+		flipX = !!config.flip_x;
+		if(config.no_antialiasing) {
+			antialiasing = false;
+			noAntialiasing = true;
+		}
+
+		if(config.healthbar_colors != null && config.healthbar_colors.length > 2)
+			healthColorArray = config.healthbar_colors;
+
+		antialiasing = !noAntialiasing;
+		if(!ClientPrefs.data.globalAntialiasing) antialiasing = false;
+	}
+
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -89,6 +211,225 @@ class Character extends FlxSprite
 		this.isPlayer = isPlayer;
 		changeCharacter(character);
 		
+		switch(curCharacter)
+		{
+			default:
+				var characterPath:String = 'characters/' + curCharacter + '.json';
+
+				#if MODS_ALLOWED
+				var rawJson = File.getContent(path);
+				#else
+				var rawJson = Assets.getText(path);
+				#end
+
+				var json:CharacterFile = cast Json.parse(rawJson);
+
+				if(json.characters == null || json.characters.length <= 1)
+				{
+					var spriteType = "sparrow";
+					//sparrow
+					//packer
+					//texture
+					#if MODS_ALLOWED
+					var modTxtToFind:String = Paths.modsTxt(json.image);
+					var txtToFind:String = Paths.getPath('images/' + json.image + '.txt', TEXT);
+					
+					//var modTextureToFind:String = Paths.modFolders("images/"+json.image);
+					//var textureToFind:String = Paths.getPath('images/' + json.image, new AssetType();
+					
+					if (FileSystem.exists(modTxtToFind) || FileSystem.exists(txtToFind) || Assets.exists(txtToFind))
+					#else
+					if (Assets.exists(Paths.getPath('images/' + json.image + '.txt', TEXT)))
+					#end
+					{
+						spriteType = "packer";
+					}
+						
+					#if MODS_ALLOWED
+					var modAnimToFind:String = Paths.modFolders('images/' + json.image + '/Animation.json');
+					var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT);
+						
+					//var modTextureToFind:String = Paths.modFolders("images/"+json.image);
+					//var textureToFind:String = Paths.getPath('images/' + json.image, new AssetType();
+						
+					if (FileSystem.exists(modAnimToFind) || FileSystem.exists(animToFind) || Assets.exists(animToFind))
+					#else
+					if (Assets.exists(Paths.getPath('images/' + json.image + '/Animation.json', TEXT)))
+					#end
+					{
+						spriteType = "texture";
+					}
+
+					imageFile = json.image;
+	
+					if(json.scale != 1) {
+						jsonScale = json.scale;
+						setGraphicSize(Std.int(width * jsonScale));
+						updateHitbox();
+					}
+	
+					if (json.maxhealth >= 0)
+						maxhealth = json.maxhealth;
+					else
+						maxhealth = 2;
+					
+					if (json.minhealth <= json.maxhealth)
+						minhealth = json.minhealth;
+					else
+						minhealth = 0;
+					
+					positionArray = json.position;
+					cameraPosition = json.camera_position;
+
+					if (json.rating_position != null)
+						ratingPosition = json.rating_position;
+
+					if (json.rating_position == null)
+						ratingPosition = [0, 0];
+
+					healthIcon = json.healthicon;
+					singDuration = json.sing_duration;
+					flipX = !!json.flip_x;
+					if(json.no_antialiasing) {
+						antialiasing = false;
+						noAntialiasing = true;
+					}
+	
+					if(json.healthbar_colors != null && json.healthbar_colors.length > 2)
+						healthColorArray = json.healthbar_colors;
+	
+					antialiasing = !noAntialiasing;
+					if(!ClientPrefs.data.globalAntialiasing) antialiasing = false;
+	
+					animationsArray = json.animations;
+					if(animationsArray != null && animationsArray.length > 0) {
+						for (anim in animationsArray) {
+							var animAnim:String = '' + anim.anim;
+							var animName:String = '' + anim.name;
+							var animFps:Int = anim.fps;
+							var animLoop:Bool = !!anim.loop; //Bruh
+							var animIndices:Array<Int> = anim.indices;
+							if(animIndices != null && animIndices.length > 0) {
+								animation.addByIndices(animAnim, animName, animIndices, "", animFps, animLoop);
+							} else {
+								animation.addByPrefix(animAnim, animName, animFps, animLoop);
+							}
+			
+							if(anim.offsets != null && anim.offsets.length > 1) {
+								addOffset(anim.anim, anim.offsets[0], anim.offsets[1]);
+							}
+						}
+					} else {
+						quickAnimAdd('idle', 'BF idle dance');
+					}
+					cameraPosition = json.camera_position;
+					//trace('Loaded file to character ' + curCharacter);
+					
+					if(json.trail == true)
+						coolTrail = new FlxPerspectiveTrail(this, null, json.trailLength, json.trailDelay, json.trailStalpha, json.trailDiff);	
+				}
+				else
+					loadNamedConfiguration(json);
+		}
+
+		originalFlipX = flipX;
+
+		if(animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
+		recalculateDanceIdle();
+		dance();
+
+		if(curCharacter != '' && otherCharacters == null && animation.curAnim != null)
+			{
+				updateHitbox();
+	
+				if (isPlayer)
+				{
+					flipX = !flipX;
+		
+					/*// Doesn't flip for BF, since his are already in the right place???
+					if (!curCharacter.startsWith('bf'))
+					{
+						// var animArray
+						if(animation.getByName('singLEFT') != null && animation.getByName('singRIGHT') != null)
+						{
+							var oldRight = animation.getByName('singRIGHT').frames;
+							animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
+							animation.getByName('singLEFT').frames = oldRight;
+						}
+		
+						// IF THEY HAVE MISS ANIMATIONS??
+						if (animation.getByName('singLEFTmiss') != null && animation.getByName('singRIGHTmiss') != null)
+						{
+							var oldMiss = animation.getByName('singRIGHTmiss').frames;
+							animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
+							animation.getByName('singLEFTmiss').frames = oldMiss;
+						}
+					}*/
+					if(!isPlayer)
+					{
+						// Doesn't flip for BF, since his are already in the right place???
+						if(opponentflip_X)
+						{
+							var oldOffRight = animOffsets.get("singRIGHT");
+							var oldOffLeft = animOffsets.get("singLEFT");
+			
+							// var animArray
+							var oldRight = animation.getByName('singRIGHT').frames;
+							animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
+							animation.getByName('singLEFT').frames = oldRight;
+			
+							animOffsets.set("singRIGHT", oldOffLeft);
+							animOffsets.set("singLEFT", oldOffRight);
+			
+							// IF THEY HAVE MISS ANIMATIONS??
+							if (animation.getByName('singRIGHTmiss') != null)
+							{
+								var oldOffRightMiss = animOffsets.get("singRIGHTmiss");
+								var oldOffLeftMiss = animOffsets.get("singLEFTmiss");
+			
+								var oldMiss = animation.getByName('singRIGHTmiss').frames;
+								animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
+								animation.getByName('singLEFTmiss').frames = oldMiss;
+			
+								animOffsets.set("singRIGHTmiss", oldOffLeftMiss);
+								animOffsets.set("singLEFTmiss", oldOffRightMiss);
+							}
+						}
+					}
+					if(isPlayer)
+					{
+						// Doesn't flip for BF, since his are already in the right place???
+						if(bfflip_X)
+						{
+							var oldOffRight = animOffsets.get("singRIGHT");
+							var oldOffLeft = animOffsets.get("singLEFT");
+			
+							// var animArray
+							var oldRight = animation.getByName('singRIGHT').frames;
+							animation.getByName('singRIGHT').frames = animation.getByName('singLEFT').frames;
+							animation.getByName('singLEFT').frames = oldRight;
+			
+							animOffsets.set("singRIGHT", oldOffLeft);
+							animOffsets.set("singLEFT", oldOffRight);
+			
+							// IF THEY HAVE MISS ANIMATIONS??
+							if (animation.getByName('singRIGHTmiss') != null)
+							{
+								var oldOffRightMiss = animOffsets.get("singRIGHTmiss");
+								var oldOffLeftMiss = animOffsets.get("singLEFTmiss");
+			
+								var oldMiss = animation.getByName('singRIGHTmiss').frames;
+								animation.getByName('singRIGHTmiss').frames = animation.getByName('singLEFTmiss').frames;
+								animation.getByName('singLEFTmiss').frames = oldMiss;
+			
+								animOffsets.set("singRIGHTmiss", oldOffLeftMiss);
+								animOffsets.set("singLEFTmiss", oldOffRightMiss);
+							}
+						}
+					}
+				}
+			}
+
 		switch(curCharacter)
 		{
 			case 'pico-blazin', 'darnell-blazin':
@@ -104,13 +445,6 @@ class Character extends FlxSprite
 		var characterPath:String = 'characters/$character.json';
 
 		var path:String = Paths.getPath(characterPath, TEXT);
-		if (!NativeFileSystem.exists(path))
-		{
-			path = Paths.getSharedPath('characters/' + DEFAULT_CHARACTER + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
-			missingCharacter = true;
-			missingText = new FlxText(0, 0, 300, 'ERROR:\n$character.json', 16);
-			missingText.alignment = CENTER;
-		}
 
 		try
 		{
@@ -163,10 +497,6 @@ class Character extends FlxSprite
 
 		imageFile = json.image;
 		jsonScale = json.scale;
-		if(json.scale != 1) {
-			scale.set(jsonScale, jsonScale);
-			updateHitbox();
-		}
 
 		// positioning
 		positionArray = json.position;

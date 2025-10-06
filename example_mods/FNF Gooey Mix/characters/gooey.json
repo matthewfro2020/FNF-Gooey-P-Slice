@@ -1,67 +1,191 @@
 {
-  "version": "1.0.0",
-  "name": "gooey",
-  "assetPath": "characters/gooey/Gooey, characters/gooey/GooeyDead, characters/gooey/GooeyBurp",
-  "renderType": "multisparrow",
-  "flipX": true,
-  "singTime": 8.0,
-  "cameraOffsets": [20, 70],
-
-  "death": {
-    "cameraOffsets": [-40, 40]
-  },
-
-  "animations": [
-    { "anim": "idle", "name": "idle", "offsets": [12, -110], "fps": 24, "loop": true },
-    { "anim": "singLEFT", "name": "left", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "singDOWN", "name": "down", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "singUP", "name": "up", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "singRIGHT", "name": "right", "offsets": [12, -110], "fps": 24, "loop": false },
-
-    { "anim": "singLEFTmiss", "name": "missLeft", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "singDOWNmiss", "name": "missDown", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "singUPmiss", "name": "missUp", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "singRIGHTmiss", "name": "missRight", "offsets": [12, -110], "fps": 24, "loop": false },
-
-    { "anim": "dodge", "name": "dodge", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "hey", "name": "hey", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "cheer", "name": "yeah", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "hit", "name": "owie", "offsets": [12, -110], "fps": 24, "loop": false },
-
-    {
-      "anim": "firstDeath",
-      "name": "gooeyDies",
-      "offsets": [12, -110],
-      "fps": 24
-    },
-    {
-      "anim": "deathLoop",
-      "name": "gameOverLoop",
-      "offsets": [12, -110],
-      "fps": 24,
-      "loop": true
-    },
-    {
-      "anim": "deathConfirm",
-      "name": "jesusChrist",
-      "offsets": [12, -110],
-      "fps": 24
-    },
-
-    { "anim": "scared", "name": "scared", "offsets": [12, -110], "fps": 24, "loop": false },
-
-    { "anim": "cock", "name": "preAttack", "offsets": [12, -110], "fps": 24, "loop": false },
-    { "anim": "shoot", "name": "attack", "offsets": [324, 37], "fps": 24, "loop": false },
-
-    { "anim": "pre-attack", "name": "preAttack", "offsets": [12, -110], "fps": 12, "loop": false },
-    { "anim": "attack", "name": "attack", "offsets": [324, 37], "fps": 24, "loop": false },
-
-    {
-      "anim": "burp",
-      "name": "burp",
-      "offsets": [12, -110],
-      "fps": 24,
-      "loop": false
-    }
-  ]
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [12, -110],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "missLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "missDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "missUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "missRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "dodge",
+			"fps": 24,
+			"name": "dodge",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "hey",
+			"fps": 24,
+			"name": "hey",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "cheer",
+			"fps": 24,
+			"name": "yeah",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "hit",
+			"fps": 24,
+			"name": "owie",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "gooeyDies",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [12, -110],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "gameOverLoop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "jesusChrist",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "scared",
+			"fps": 24,
+			"name": "scared",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "cock",
+			"fps": 24,
+			"name": "preAttack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [324, 37],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "attack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "pre-attack",
+			"fps": 12,
+			"name": "preAttack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [324, 37],
+			"anim": "attack",
+			"fps": 24,
+			"name": "attack",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [12, -110],
+			"anim": "burp",
+			"fps": 24,
+			"name": "burp",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/gooey/gooey, characters/gooey/GooeyDead, characters/gooey/GooeyBurp",
+	"position": [-70, 170],
+	"healthicon": "gooey",
+	"flip_x": true,
+	"healthbar_colors": [128, 240, 203],
+	"camera_position": [20, 70],
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": true
 }
