@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="FloraSpeakerPoses.png">
+<SubTexture name="floraBop0000" x="1544" y="0" width="769" height="385" frameX="-6" frameY="-18" frameWidth="800" frameHeight="450" />
+<SubTexture name="floraBop0001" x="1544" y="385" width="769" height="388" frameX="-6" frameY="-15" frameWidth="800" frameHeight="450" />
+<SubTexture name="floraBop0002" x="1544" y="773" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfDown0000" x="0" y="0" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfDown0001" x="770" y="0" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfUp0000" x="0" y="389" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfUp0001" x="770" y="389" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfRight0000" x="0" y="778" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfRight0001" x="770" y="778" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfLeft0000" x="0" y="1167" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="bfLeft0001" x="770" y="1167" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="gfLeft0000" x="0" y="1556" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="gfLeft0001" x="770" y="1556" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="grRight0000" x="0" y="1945" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="grRight0001" x="770" y="1945" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="gfUp0000" x="0" y="2334" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="gfUp0001" x="770" y="2334" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="gfDown0000" x="0" y="2723" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+<SubTexture name="gfDown0001" x="770" y="2723" width="769" height="389" frameX="-6" frameY="-14" frameWidth="800" frameHeight="450" />
+</TextureAtlas>

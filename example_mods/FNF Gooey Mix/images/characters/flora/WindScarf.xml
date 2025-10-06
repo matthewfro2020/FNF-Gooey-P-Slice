@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="WindScarf.png">
+<SubTexture name="blowjob0000" x="0" y="0" width="202" height="101" frameX="-12" frameY="-11" frameWidth="250" frameHeight="150" />
+<SubTexture name="blowjob0001" x="0" y="101" width="208" height="92" frameX="-13" frameY="-15" frameWidth="250" frameHeight="150" />
+<SubTexture name="blowjob0002" x="0" y="193" width="198" height="99" frameX="-12" frameY="-9" frameWidth="250" frameHeight="150" />
+<SubTexture name="blowjob0003" x="0" y="292" width="199" height="93" frameX="-14" frameY="-17" frameWidth="250" frameHeight="150" />
+</TextureAtlas>
