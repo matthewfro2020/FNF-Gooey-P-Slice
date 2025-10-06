@@ -445,7 +445,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
                                 bfflip_X: false
 			};
 
-			character.loadCharacterFile(_template);
+			character.loadCharacterFile();
 			character.missingCharacter = false;
 			character.color = FlxColor.WHITE;
 			character.alpha = 1;

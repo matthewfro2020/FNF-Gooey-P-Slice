@@ -112,6 +112,8 @@ class Character extends FlxPerspectiveSprite
 
 	public var coolTrail:FlxPerspectiveTrail;
 
+        public var json:Dynamic;
+
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -150,8 +152,6 @@ class Character extends FlxPerspectiveSprite
 				#else
 				var rawJson = Assets.getText(path);
 				#end
-
-				var json:CharacterFile = cast Json.parse(rawJson);
 
 				if(json.characters == null || json.characters.length <= 1)
 				{
@@ -383,7 +383,7 @@ class Character extends FlxPerspectiveSprite
 
 		try
 		{
-			loadCharacterFile(Json.parse(NativeFileSystem.getContent(path)));
+			loadCharacterFile();
 		}
 		catch(e:Dynamic)
 		{
@@ -396,7 +396,7 @@ class Character extends FlxPerspectiveSprite
 		dance();
 	}
 
-	public function loadCharacterFile(json:Dynamic)
+	public function loadCharacterFile()
 	{
 		isAnimateAtlas = false;
 
