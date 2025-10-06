@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ASMPbop1.png">
+<SubTexture name="idleBop0000" x="0" y="0" width="1913" height="559" frameX="-1662" frameY="-1416" frameWidth="4000" frameHeight="2100" />
+<SubTexture name="idleBop0001" x="0" y="559" width="1911" height="559" frameX="-1663" frameY="-1416" frameWidth="4000" frameHeight="2100" />
+<SubTexture name="idleBop0002" x="0" y="1118" width="1911" height="563" frameX="-1661" frameY="-1412" frameWidth="4000" frameHeight="2100" />
+<SubTexture name="idleBop0003" x="0" y="1681" width="1912" height="569" frameX="-1659" frameY="-1406" frameWidth="4000" frameHeight="2100" />
+<SubTexture name="idleBop0004" x="0" y="2250" width="1912" height="570" frameX="-1659" frameY="-1405" frameWidth="4000" frameHeight="2100" />
+</TextureAtlas>

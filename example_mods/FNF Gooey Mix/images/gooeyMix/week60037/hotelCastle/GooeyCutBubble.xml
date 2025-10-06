@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="GooeyCutBubble.png">
+<SubTexture name="buble0000" x="0" y="0" width="1405" height="1086" frameX="-521" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="buble0001" x="1405" y="0" width="1405" height="1086" frameX="-521" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="buble0002" x="2810" y="0" width="1403" height="1086" frameX="-523" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="blank0000" x="0" y="0" width="1" height="1" frameX="-1046" frameY="-459" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="solike0000" x="4213" y="0" width="54" height="91" frameX="-1046" frameY="-459" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="solike0001" x="4267" y="0" width="197" height="333" frameX="-974" frameY="-339" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="solike0002" x="0" y="1086" width="183" height="310" frameX="-981" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="imBrokeAF0000" x="183" y="1086" width="175" height="302" frameX="-985" frameY="-355" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="imBrokeAF0001" x="358" y="1086" width="191" height="319" frameX="-977" frameY="-345" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="imBrokeAF0002" x="549" y="1086" width="183" height="310" frameX="-981" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="butWhatIf0000" x="732" y="1086" width="171" height="320" frameX="-987" frameY="-354" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="butWhatIf0001" x="0" y="1406" width="356" height="1038" frameX="-924" frameY="-10" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="butWhatIf0002" x="356" y="1406" width="476" height="274" frameX="-865" frameY="-402" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="butWhatIf0003" x="832" y="1406" width="463" height="278" frameX="-870" frameY="-398" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="iRobMyFriends0000" x="1295" y="1406" width="463" height="625" frameX="-870" frameY="-51" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="iRobMyFriends0001" x="1758" y="1406" width="508" height="271" frameX="-838" frameY="-408" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="iRobMyFriends0002" x="0" y="2444" width="646" height="326" frameX="-776" frameY="-364" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="iRobMyFriends0003" x="646" y="2444" width="652" height="330" frameX="-773" frameY="-361" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="iRobMyFriends0004" x="1298" y="2444" width="652" height="336" frameX="-773" frameY="-355" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andUseTheMoney0000" x="1950" y="2444" width="657" height="331" frameX="-771" frameY="-361" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andUseTheMoney0001" x="2607" y="2444" width="968" height="667" frameX="-813" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andUseTheMoney0002" x="0" y="3111" width="557" height="310" frameX="-854" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andUseTheMoney0003" x="0" y="3111" width="557" height="310" frameX="-840" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andUseTheMoney0004" x="0" y="3111" width="557" height="310" frameX="-838" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="toWin0000" x="557" y="3111" width="567" height="305" frameX="-832" frameY="-350" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="toWin0001" x="1124" y="3111" width="624" height="360" frameX="-764" frameY="-316" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="toWin0002" x="1748" y="3111" width="602" height="356" frameX="-792" frameY="-315" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="toWin0003" x="2350" y="3111" width="605" height="356" frameX="-789" frameY="-315" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andGetMOREmoney0000" x="0" y="3471" width="606" height="384" frameX="-789" frameY="-314" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andGetMOREmoney0001" x="606" y="3471" width="601" height="693" frameX="-794" frameY="-347" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andGetMOREmoney0002" x="1207" y="3471" width="650" height="278" frameX="-770" frameY="-394" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="andGetMOREmoney0003" x="1857" y="3471" width="641" height="287" frameX="-776" frameY="-389" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="imSoFuckingSmart0000" x="2498" y="3471" width="627" height="326" frameX="-783" frameY="-390" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="imSoFuckingSmart0001" x="0" y="4164" width="580" height="566" frameX="-810" frameY="-417" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="imSoFuckingSmart0002" x="580" y="4164" width="1926" height="1086" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>
