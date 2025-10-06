@@ -10,6 +10,7 @@ import substates.GameOverSubstate;
 #else
 using mikolka.compatibility.stages.misc.CharUtills;
 #end
+import backend.BaseStage;
 
 class GooeyCapableStage extends BaseStage
 {
@@ -22,8 +23,6 @@ class GooeyCapableStage extends BaseStage
 	public static var NENE_LIST = ['flora','flora-pixel', 'flora-christmas', 'flora-dark'];
 	public static var PIXEL_LIST = ['flora-pixel'];
 
-	public var abot:ABotSpeaker;
-	public var abotPixel:ABotPixel;
 	public var forceABot:Bool = false;
 	var blinkCountdown:Int = 3;
 	public function new(forceABot:Bool = false) {

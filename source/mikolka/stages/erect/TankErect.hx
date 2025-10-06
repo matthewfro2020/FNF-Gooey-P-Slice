@@ -9,14 +9,15 @@ import substates.GameOverSubstate;
 #end
 import mikolka.stages.cutscenes.VideoCutscene;
 import mikolka.stages.cutscenes.PicoTankman;
+import mikolka.stages.cutscenes.GooeyTankman;
 import openfl.filters.ShaderFilter;
 import shaders.DropShadowScreenspace;
 import mikolka.stages.scripts.PicoCapableStage;
 import mikolka.stages.scripts.GooeyCapableStage;
 import mikolka.compatibility.VsliceOptions;
 import shaders.DropShadowShader;
+import backend.BaseStage;
 
-// tankmanBattlefieldErect
 class TankErect extends BaseStage
 {
 	var sniper:FlxSprite;
