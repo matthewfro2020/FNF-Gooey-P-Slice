@@ -125,7 +125,7 @@ class TankErect extends BaseStage {
 
 			for (bf in game.boyfriendGroup.members) {
 				bf.visible = true;
-				bf..animation.play('idle', true);
+				bf.animation.play('idle', true);
 			}
 
 			for (dad in game.dadGroup.members) {
