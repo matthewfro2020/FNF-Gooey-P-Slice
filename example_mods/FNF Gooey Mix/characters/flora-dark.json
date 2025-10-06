@@ -1,0 +1,84 @@
+{
+  "image": "characters/flora/Flora_dark",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    0,
+    0
+  ],
+  "healthicon": "flora",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "danceLeft",
+      "name": "idleLeft",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        180
+      ],
+      "indices": []
+    },
+    {
+      "anim": "danceRight",
+      "name": "idleRight",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        180
+      ],
+      "indices": []
+    },
+    {
+      "anim": "combo50",
+      "name": "combo50",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        180
+      ],
+      "indices": []
+    },
+    {
+      "anim": "combo200",
+      "name": "combo200",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        180
+      ],
+      "indices": []
+    },
+    {
+      "anim": "drop70",
+      "name": "comboBreak",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        180
+      ],
+      "indices": []
+    },
+    {
+      "anim": "scared",
+      "name": "scared",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        180
+      ],
+      "indices": []
+    }
+  ],
+  "fps": 24
+}

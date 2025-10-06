@@ -1,0 +1,61 @@
+{
+  "animations": [
+    {
+      "anim": "danceLeft",
+      "name": "idleLeft",
+      "fps": 24,
+      "loop": true,
+      "indices": [],
+      "offsets": [-20, 180]
+    },
+    {
+      "anim": "danceRight",
+      "name": "idleRight",
+      "fps": 24,
+      "loop": true,
+      "indices": [],
+      "offsets": [-20, 180]
+    },
+    {
+      "anim": "combo50",
+      "name": "combo50",
+      "fps": 24,
+      "loop": false,
+      "indices": [],
+      "offsets": [-20, 180]
+    },
+    {
+      "anim": "combo200",
+      "name": "combo200",
+      "fps": 24,
+      "loop": false,
+      "indices": [],
+      "offsets": [-20, 180]
+    },
+    {
+      "anim": "drop70",
+      "name": "comboBreak",
+      "fps": 24,
+      "loop": false,
+      "indices": [],
+      "offsets": [-20, 180]
+    },
+    {
+      "anim": "scared",
+      "name": "scared",
+      "fps": 24,
+      "loop": false,
+      "indices": [],
+      "offsets": [-20, 180]
+    }
+  ],
+  "camera_position": [0, 0],
+  "position": [0, 0],
+  "scale": 1,
+  "flip_x": false,
+  "no_antialiasing": false,
+  "healthicon": "flora",
+  "sing_duration": 8.0,
+  "isPixel": false,
+  "image": "characters/flora/Flora"
+}

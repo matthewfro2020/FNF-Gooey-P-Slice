@@ -1,0 +1,218 @@
+{
+  "image": "characters/Monster_Assets_darkGooey",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "healthicon": "gooey",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "monster idle",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "idle-hold",
+      "name": "monster idle",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "Monster Right note",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -30,
+        20
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singLEFT-hold",
+      "name": "Monster Right note",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        -30,
+        20
+      ],
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "monster down",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -50,
+        -80
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singDOWN-hold",
+      "name": "monster down",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        -50,
+        -80
+      ],
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "monster up note",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        94
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singUP-hold",
+      "name": "monster up note",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        -20,
+        94
+      ],
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "Monster left note",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -51,
+        30
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singRIGHT-hold",
+      "name": "Monster left note",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        -51,
+        30
+      ],
+      "indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "fps": 24
+}

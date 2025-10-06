@@ -1,0 +1,187 @@
+{
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "idle-hold",
+      "name": "idle",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "left",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFT-hold",
+      "name": "left",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWN-hold",
+      "name": "down",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUP-hold",
+      "name": "up",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "right",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHT-hold",
+      "name": "right",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "missLeft",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "missDown",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "missUp",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "missRight",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "firstDeath",
+      "name": "gooeyDies",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "deathLoop",
+      "name": "gameOverLoop",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "jesusChrist",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    }
+  ],
+  "image": "characters/gooey/GooeyCar, characters/gooey/GooeyDead",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "sing_duration": 8.0,
+  "healthicon": "gooey"
+}

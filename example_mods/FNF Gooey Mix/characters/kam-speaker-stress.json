@@ -1,0 +1,120 @@
+{
+  "image": "characters/kam/KamStress",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "healthicon": "kam",
+  "sing_duration": 10.0,
+  "animations": [
+    {
+      "anim": "shoot1",
+      "name": "rightHigh",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "shoot2",
+      "name": "rightLow",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "shoot3",
+      "name": "leftHigh",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "shoot4",
+      "name": "leftLow",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "fakeIdle",
+      "name": "idle",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "kamMurder",
+      "name": "kamMurder",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "assetPath": "characters/kam/KamStressCutscene"
+    },
+    {
+      "anim": "grab",
+      "name": "grab",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "assetPath": "characters/kam/KamStressCutscene"
+    },
+    {
+      "anim": "iDontKnow",
+      "name": "iDontKnow",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "assetPath": "characters/kam/KamStressCutscene"
+    }
+  ],
+  "fps": 24
+}

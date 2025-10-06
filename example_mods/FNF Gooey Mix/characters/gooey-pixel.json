@@ -1,0 +1,139 @@
+{
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "left",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "right",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "missLeft",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "missDown",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "missUp",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "missRight",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "firstDeath",
+      "name": "gooeyDies",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "deathLoop",
+      "name": "gameOverLoop",
+      "fps": 12,
+      "loop": true,
+      "offsets": [
+        0,
+        0
+      ]
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "jesusChrist",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ]
+    }
+  ],
+  "image": "characters/gooey/gooeyPixel",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "sing_duration": 8.0,
+  "healthicon": "gooey",
+  "isPixel": true,
+  "noAntialiasing": true
+}

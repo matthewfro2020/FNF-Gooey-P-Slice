@@ -1,0 +1,222 @@
+{
+  "image": "characters/tankmanCaptain",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    0,
+    0
+  ],
+  "healthicon": "tankman",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "Tankman Idle Dance instance 1",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "flipX": false
+    },
+    {
+      "anim": "dankman",
+      "name": "dank",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        40,
+        10
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/dankman",
+      "flipX": true
+    },
+    {
+      "anim": "done",
+      "name": "done",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        10
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/tankman_done",
+      "flipX": true
+    },
+    {
+      "anim": "singLEFT",
+      "name": "Tankman Right Note instance 1",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        90,
+        -13
+      ],
+      "indices": [],
+      "flipX": false
+    },
+    {
+      "anim": "singDOWN",
+      "name": "Tankman DOWN note instance 1",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        63,
+        -105
+      ],
+      "indices": [],
+      "flipX": false
+    },
+    {
+      "anim": "singUP",
+      "name": "Tankman UP note instance 1",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        48,
+        54
+      ],
+      "indices": [],
+      "flipX": false
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "Tankman Note Left instance 1",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -22,
+        -28
+      ],
+      "indices": [],
+      "flipX": false
+    },
+    {
+      "anim": "augh",
+      "name": "tankman ARGH",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        52,
+        -6
+      ],
+      "indices": [],
+      "assetPath": "characters/tankmanPico",
+      "flipX": true
+    },
+    {
+      "anim": "ugh",
+      "name": "TANKMAN UGH instance 1",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -16,
+        -9
+      ],
+      "indices": [],
+      "flipX": false
+    },
+    {
+      "anim": "fuck",
+      "name": "prettyFUCK",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -2,
+        15
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/tankman_FUCK",
+      "flipX": true
+    },
+    {
+      "anim": "isGooey",
+      "name": "gooeyTankman Idle Dance",
+      "fps": 48,
+      "loop": false,
+      "offsets": [
+        -2,
+        15
+      ],
+      "indices": [
+        62
+      ],
+      "assetPath": "characters/tankman/tankman_FUCK",
+      "flipX": true
+    },
+    {
+      "anim": "idle-gooey",
+      "name": "gooeyTankman Idle Dance",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/Tankman_Gooey",
+      "flipX": false
+    },
+    {
+      "anim": "singLEFT-gooey",
+      "name": "gooeyTankman Right Note",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        90,
+        -13
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/Tankman_Gooey",
+      "flipX": false
+    },
+    {
+      "anim": "singDOWN-gooey",
+      "name": "gooeyTankman DOWN note",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        63,
+        -105
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/Tankman_Gooey",
+      "flipX": false
+    },
+    {
+      "anim": "singUP-gooey",
+      "name": "gooeyTankman UP note",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        48,
+        54
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/Tankman_Gooey",
+      "flipX": false
+    },
+    {
+      "anim": "singRIGHT-gooey",
+      "name": "gooeyTankman Note Left",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -22,
+        -28
+      ],
+      "indices": [],
+      "assetPath": "characters/tankman/Tankman_Gooey",
+      "flipX": false
+    }
+  ],
+  "fps": 24
+}

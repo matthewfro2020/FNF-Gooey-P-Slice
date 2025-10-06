@@ -1,0 +1,188 @@
+{
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "right",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "left",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "missLeft",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "missDown",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "missUp",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "missRight",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFT-alt",
+      "name": "right",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWN-alt",
+      "name": "altDown",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUP-alt",
+      "name": "up",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHT-alt",
+      "name": "altLeft",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "dodge",
+      "name": "dodge",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "hey",
+      "name": "hey",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "cheer",
+      "name": "yeah",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "hit",
+      "name": "owie",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    }
+  ],
+  "image": "characters/gooey/Gooey",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "sing_duration": 8.0,
+  "healthicon": "gooey",
+  "frameRate": 12
+}

@@ -1,1 +1,271 @@
-
+{
+  "image": "characters/BOYFRIEND",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "healthicon": "bf",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "BF idle dance",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -5,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singLEFT",
+      "name": "BF NOTE LEFT0",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -6
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singDOWN",
+      "name": "BF NOTE DOWN0",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -10,
+        -50
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singUP",
+      "name": "BF NOTE UP0",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -29,
+        27
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "BF NOTE RIGHT0",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -38,
+        -7
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "BF NOTE LEFT MISS",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        24
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "BF NOTE DOWN MISS",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -11,
+        -19
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "BF NOTE UP MISS",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -29,
+        27
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "BF NOTE RIGHT MISS",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -30,
+        21
+      ],
+      "indices": []
+    },
+    {
+      "anim": "preAttack",
+      "name": "bf pre attack",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "attack",
+      "name": "boyfriend attack",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "dodge",
+      "name": "boyfriend dodge",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": []
+    },
+    {
+      "anim": "dodge-hold",
+      "name": "boyfriend dodge",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [
+        10,
+        11,
+        12
+      ],
+      "assetPath": "characters/BOYFRIEND"
+    },
+    {
+      "anim": "hey",
+      "name": "BF HEY!!",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        7,
+        4
+      ],
+      "indices": []
+    },
+    {
+      "anim": "cheer",
+      "name": "Cheer",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "assetPath": "characters/BFCheer"
+    },
+    {
+      "anim": "hit",
+      "name": "BF hit",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "assetPath": "characters/BOYFRIEND"
+    },
+    {
+      "anim": "hit-hold",
+      "name": "BF hit",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [
+        10,
+        11
+      ],
+      "assetPath": "characters/BOYFRIEND"
+    },
+    {
+      "anim": "firstDeath",
+      "name": "BF dies",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -37,
+        11
+      ],
+      "indices": []
+    },
+    {
+      "anim": "fakeoutDeath",
+      "name": "BF dies",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -37,
+        11
+      ],
+      "indices": []
+    },
+    {
+      "anim": "deathLoop",
+      "name": "BF Dead Loop",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        -37,
+        5
+      ],
+      "indices": []
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "BF Dead confirm",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -37,
+        69
+      ],
+      "indices": []
+    },
+    {
+      "anim": "scared",
+      "name": "BF idle shaking",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -4,
+        0
+      ],
+      "indices": []
+    }
+  ],
+  "fps": 24
+}

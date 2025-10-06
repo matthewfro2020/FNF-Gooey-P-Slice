@@ -1,0 +1,97 @@
+{
+  "image": "characters/extra/Mix",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    0,
+    90
+  ],
+  "healthicon": "gooey",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        90,
+        -60
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singLEFT",
+      "name": "right",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        90,
+        -60
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        90,
+        -60
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        90,
+        -60
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "left",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        90,
+        -60
+      ],
+      "indices": []
+    },
+    {
+      "anim": "hey",
+      "name": "hey",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        90,
+        -60
+      ],
+      "indices": []
+    },
+    {
+      "anim": "showOffassBITCH",
+      "name": "intro",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        290,
+        -60
+      ],
+      "indices": [],
+      "assetPath": "characters/extra/mixIntro",
+      "flipX": true
+    }
+  ],
+  "fps": 12
+}

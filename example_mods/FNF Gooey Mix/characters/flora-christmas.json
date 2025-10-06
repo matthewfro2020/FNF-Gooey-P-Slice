@@ -1,0 +1,73 @@
+{
+  "image": "characters/flora/FloraChristmas",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    -200,
+    -230
+  ],
+  "healthicon": "flora",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "danceLeft",
+      "name": "idleLeft",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        210
+      ],
+      "indices": []
+    },
+    {
+      "anim": "danceRight",
+      "name": "idleRight",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        210
+      ],
+      "indices": []
+    },
+    {
+      "anim": "combo50",
+      "name": "combo50",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        210
+      ],
+      "indices": []
+    },
+    {
+      "anim": "combo200",
+      "name": "combo200",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        210
+      ],
+      "indices": []
+    },
+    {
+      "anim": "drop70",
+      "name": "comboBreak",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -20,
+        210
+      ],
+      "indices": []
+    }
+  ],
+  "fps": 24
+}

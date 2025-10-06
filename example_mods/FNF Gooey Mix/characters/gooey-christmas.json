@@ -1,0 +1,138 @@
+{
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "left",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "right",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "missLeft",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "missDown",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "missUp",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "missRight",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "firstDeath",
+      "name": "gooeyDies",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "deathLoop",
+      "name": "gameOverLoop",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "jesusChrist",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    }
+  ],
+  "image": "characters/gooey/GooeyChristmas, characters/gooey/GooeyDeadChristmas",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "sing_duration": 8.0,
+  "healthicon": "gooey",
+  "frameRate": 12
+}

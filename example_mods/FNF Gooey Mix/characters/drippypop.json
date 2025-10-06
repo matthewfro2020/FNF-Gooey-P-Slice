@@ -1,0 +1,73 @@
+{
+  "image": "characters/extra/drippy",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "healthicon": "gooey",
+  "sing_duration": 8.0,
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "DripIdle",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -30,
+        -90
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singLEFT",
+      "name": "DripLeft",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        146,
+        -84
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singDOWN",
+      "name": "DripDown",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -34,
+        -111
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singUP",
+      "name": "DripUp",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        27,
+        13
+      ],
+      "indices": []
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "DripRight",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        -34,
+        -84
+      ],
+      "indices": []
+    }
+  ],
+  "fps": 24
+}

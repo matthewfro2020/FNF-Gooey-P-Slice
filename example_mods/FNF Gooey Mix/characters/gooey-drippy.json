@@ -1,0 +1,138 @@
+{
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "left",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "right",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "missLeft",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "missDown",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "missUp",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "missRight",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "firstDeath",
+      "name": "dies",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "deathLoop",
+      "name": "dead",
+      "fps": 12,
+      "loop": true,
+      "offsets": [
+        15,
+        -40
+      ]
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "revive",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        15,
+        -40
+      ]
+    }
+  ],
+  "image": "characters/extra/DrippyGooey, characters/extra/DrippyGooey-dead",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "sing_duration": 8.0,
+  "healthicon": "gooey",
+  "frameRate": 12
+}

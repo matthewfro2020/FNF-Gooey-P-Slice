@@ -1,0 +1,223 @@
+{
+  "animations": [
+    {
+      "anim": "idle",
+      "name": "idle",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFT",
+      "name": "left",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWN",
+      "name": "down",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUP",
+      "name": "up",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHT",
+      "name": "right",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singLEFTmiss",
+      "name": "missLeft",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singDOWNmiss",
+      "name": "missDown",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singUPmiss",
+      "name": "missUp",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "singRIGHTmiss",
+      "name": "missRight",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "firstDeath",
+      "name": "gooeyDies",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "deathLoop",
+      "name": "gameOverLoop",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ],
+      "assetPath": "characters/gooey/GooeyDeadStress",
+      "flipX": false
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "jesusChrist",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ],
+      "assetPath": "characters/gooey/GooeyDeadStress",
+      "flipX": false
+    },
+    {
+      "anim": "cock",
+      "name": "preAttack",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "fakeIdle",
+      "name": "fakeIdle",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ],
+      "assetPath": "characters/gooey/GooeyStressCut"
+    },
+    {
+      "anim": "2fakeIdle",
+      "name": "idle",
+      "fps": 24,
+      "loop": true,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "shoot",
+      "name": "attack",
+      "fps": 24,
+      "loop": false,
+      "offsets": [
+        324,
+        37
+      ]
+    },
+    {
+      "anim": "ruhRohRaggy",
+      "name": "ruhRohRaggy",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "omgFriend",
+      "name": "omgFriend",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "crystalGlow",
+      "name": "crystalGlow",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    },
+    {
+      "anim": "chickenJockey",
+      "name": "chickenJockey",
+      "fps": 12,
+      "loop": false,
+      "offsets": [
+        12,
+        -110
+      ]
+    }
+  ],
+  "image": "characters/gooey/GooeyStress, characters/gooey/GooeyDeadStress, characters/gooey/GooeyStressCut, characters/gooey/GooeyStressAttack",
+  "scale": 1,
+  "flip_x": true,
+  "position": [
+    0,
+    0
+  ],
+  "camera_position": [
+    20,
+    70
+  ],
+  "sing_duration": 8.0,
+  "healthicon": "gooey",
+  "frameRate": 12
+}

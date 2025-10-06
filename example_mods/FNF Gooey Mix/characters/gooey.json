@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "name": "gooey",
+  "assetPath": "characters/gooey/Gooey, characters/gooey/GooeyDead, characters/gooey/GooeyBurp",
+  "renderType": "multisparrow",
+  "flipX": true,
+  "singTime": 8.0,
+  "cameraOffsets": [20, 70],
+
+  "death": {
+    "cameraOffsets": [-40, 40]
+  },
+
+  "animations": [
+    { "anim": "idle", "name": "idle", "offsets": [12, -110], "fps": 24, "loop": true },
+    { "anim": "singLEFT", "name": "left", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "singDOWN", "name": "down", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "singUP", "name": "up", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "singRIGHT", "name": "right", "offsets": [12, -110], "fps": 24, "loop": false },
+
+    { "anim": "singLEFTmiss", "name": "missLeft", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "singDOWNmiss", "name": "missDown", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "singUPmiss", "name": "missUp", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "singRIGHTmiss", "name": "missRight", "offsets": [12, -110], "fps": 24, "loop": false },
+
+    { "anim": "dodge", "name": "dodge", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "hey", "name": "hey", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "cheer", "name": "yeah", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "hit", "name": "owie", "offsets": [12, -110], "fps": 24, "loop": false },
+
+    {
+      "anim": "firstDeath",
+      "name": "gooeyDies",
+      "offsets": [12, -110],
+      "fps": 24
+    },
+    {
+      "anim": "deathLoop",
+      "name": "gameOverLoop",
+      "offsets": [12, -110],
+      "fps": 24,
+      "loop": true
+    },
+    {
+      "anim": "deathConfirm",
+      "name": "jesusChrist",
+      "offsets": [12, -110],
+      "fps": 24
+    },
+
+    { "anim": "scared", "name": "scared", "offsets": [12, -110], "fps": 24, "loop": false },
+
+    { "anim": "cock", "name": "preAttack", "offsets": [12, -110], "fps": 24, "loop": false },
+    { "anim": "shoot", "name": "attack", "offsets": [324, 37], "fps": 24, "loop": false },
+
+    { "anim": "pre-attack", "name": "preAttack", "offsets": [12, -110], "fps": 12, "loop": false },
+    { "anim": "attack", "name": "attack", "offsets": [324, 37], "fps": 24, "loop": false },
+
+    {
+      "anim": "burp",
+      "name": "burp",
+      "offsets": [12, -110],
+      "fps": 24,
+      "loop": false
+    }
+  ]
+}
