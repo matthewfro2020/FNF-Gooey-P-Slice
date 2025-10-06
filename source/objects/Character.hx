@@ -13,6 +13,8 @@ import haxe.Json;
 import backend.Song;
 import mikolka.stages.objects.TankmenBG;
 
+import FlxPerspectiveSprite.FlxPerspectiveTrail;
+
 typedef CharacterFile = {
 	var animations:Array<AnimArray>;
 	var image:String;
@@ -36,15 +38,6 @@ typedef CharacterFile = {
 
 	// multiple characters stuff
 	var characters:Array<CharacterData>;
-
-	// shaggy
-	var trail:Null<Bool>;
-	var trailLength:Null<Int>;
-	var trailDelay:Null<Int>;
-	var trailStalpha:Null<Float>;
-	var trailDiff:Null<Float>;
-
-
 	var vocals_file:String;
 	@:optional var _editor_isPlayer:Null<Bool>;
 }
@@ -65,7 +58,7 @@ typedef AnimArray = {
 	var offsets:Array<Int>;
 }
 
-class Character extends FlxSprite
+class Character extends FlxPerspectiveSprite
 {
 	public var bfflip_X:Bool = false;
 	public var opponentflip_X:Bool = false;
@@ -217,9 +210,9 @@ class Character extends FlxSprite
 				var characterPath:String = 'characters/' + curCharacter + '.json';
 
 				#if MODS_ALLOWED
-				var rawJson = File.getContent(path);
+				var rawJson = File.getContent();
 				#else
-				var rawJson = Assets.getText(path);
+				var rawJson = Assets.getText();
 				#end
 
 				var json:CharacterFile = cast Json.parse(rawJson);
@@ -324,9 +317,6 @@ class Character extends FlxSprite
 					}
 					cameraPosition = json.camera_position;
 					//trace('Loaded file to character ' + curCharacter);
-					
-					if(json.trail == true)
-						coolTrail = new FlxPerspectiveTrail(this, null, json.trailLength, json.trailDelay, json.trailStalpha, json.trailDiff);	
 				}
 				else
 					loadNamedConfiguration(json);

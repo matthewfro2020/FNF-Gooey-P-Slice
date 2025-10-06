@@ -1,0 +1,31 @@
+{
+	"characters": [
+		{
+			"name": "flora-speakers",
+			"positionArray": [0,0]
+		},
+		{
+			"name": "flora",
+			"positionArray": [0,0]
+		},
+		{
+			"name": "flora-eyes",
+			"positionArray": [0,0]
+		}
+	],
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"randomCharaMiss": false
+}

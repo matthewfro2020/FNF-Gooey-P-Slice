@@ -10,6 +10,7 @@ import flixel.system.FlxAssets;
 
 import openfl.display.BitmapData;
 import openfl.display3D.textures.RectangleTexture;
+import openfl.utils.Assets as OpenFlAssets;
 import openfl.utils.AssetType;
 import openfl.system.System;
 import openfl.geom.Rectangle;
@@ -30,6 +31,21 @@ class Paths
 {
 	inline public static var SOUND_EXT = "ogg";//#if web "mp3" #else "ogg" #end;
 	inline public static var VIDEO_EXT = "mp4";
+
+
+	inline static public function existsPath(key:String, type:AssetType = null, ?library:String)
+	{
+		#if sys
+		if (FileSystem.exists(getPath(key, type, library))) {
+			return true;
+		}
+		#end
+
+		if (OpenFlAssets.exists(getPath(key, type, library), type)) {
+			return true;
+		}
+		return false;
+	}
 
 	public static function excludeAsset(key:String) {
 		if (!dumpExclusions.contains(key))

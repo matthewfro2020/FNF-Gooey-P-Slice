@@ -34,6 +34,7 @@ import states.InitState;
 	public var autoPause:Bool = true;
 	public var fpsRework:Bool = false;
 	public var antialiasing:Bool = true;
+	public var globalAntialiasing:Bool = true;
 	public var noteSkin:String = 'Default';
 	public var splashSkin:String = 'Psych';
 	public var holdSkin:String = 'Vanilla';

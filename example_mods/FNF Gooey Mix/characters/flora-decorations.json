@@ -1,0 +1,119 @@
+{
+	"animations": [
+		{
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "floraBop"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singDOWNbf",
+			"indices": [],
+			"name": "bfDown"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singUPbf",
+			"indices": [],
+			"name": "bfUP"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singRIGHTbf",
+			"indices": [],
+			"name": "bfRight"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singLEFTbf",
+			"indices": [],
+			"name": "bfLeft"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singDOWNgf",
+			"indices": [],
+			"name": "gfDown"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singUPgf",
+			"indices": [],
+			"name": "gfUp"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singRIGHTgf",
+			"indices": [],
+			"name": "gfRight"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": true,
+			"fps": 12,
+			"anim": "singLEFTgf",
+			"indices": [],
+			"name": "gfLeft"
+		},
+                {
+			"offsets": [-20, 180],
+			"loop": false,
+			"fps": 24,
+			"anim": "combo50",
+			"indices": [],
+			"name": "combo50"
+		},
+		{
+			"offsets": [-20, 180],
+			"loop": false,
+			"fps": 24,
+			"anim": "combo200",
+			"indices": [],
+			"name": "combo200"
+		},
+		{
+			"offsets": [-20, 180],
+			"loop": false,
+			"fps": 24,
+			"anim": "drop70",
+			"indices": [],
+			"name": "comboBreak"
+		},
+		{
+			"offsets": [-20, 180],
+			"loop": false,
+			"fps": 24,
+			"anim": "scared",
+			"indices": [],
+			"name": "scared"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/flora/FloraSpeaker",
+	"position": [-50, 150],
+	"healthicon": "flora",
+	"flip_x": false,
+	"healthbar_colors": [244, 196, 124],
+	"camera_position": [0, 0],
+	"sing_duration": 8,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
