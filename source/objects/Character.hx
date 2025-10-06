@@ -112,88 +112,6 @@ class Character extends FlxPerspectiveSprite
 
 	public var coolTrail:FlxPerspectiveTrail;
 
-
-	function loadNamedConfiguration(config:CharacterFile)
-	{
-		if(config.characters == null || config.characters.length <= 1)
-		{
-			return;
-		}
-		else
-		{
-			otherCharacters = [];
-
-			for(characterData in config.characters)
-			{
-				var character:Character;
-
-				if(!isPlayer)
-					character = new Dad(x, y, characterData.name);
-				else
-					character = new Boyfriend(x, y, characterData.name);
-
-				if (characterData.positionArray == null)
-				{
-					if(flipX)
-						characterData.positionOffset[0] = 0 - characterData.positionOffset[0];
-	
-					character.positionArray[0] += characterData.positionOffset[0];
-					character.positionArray[1] += characterData.positionOffset[1];					
-				}
-				else
-				{
-					if(flipX)
-						characterData.positionArray[0] = 0 - characterData.positionArray[0];
-	
-					character.positionArray[0] += characterData.positionArray[0];
-					character.positionArray[1] += characterData.positionArray[1];
-				}
-			
-				otherCharacters.push(character);
-
-				if(config.camera_position != null)
-				{
-					if(flipX)
-						config.camera_position[0] = 0 - config.camera_position[0];
-					
-					cameraPosition = config.camera_position;
-				}
-			}
-		}
-
-		if (config.maxhealth >= 0)
-			maxhealth = config.maxhealth;
-		else
-			maxhealth = 2;
-		
-		if (config.minhealth <= config.maxhealth)
-			minhealth = config.minhealth;
-		else
-			minhealth = 0;
-		
-		if(config.scale != 1) {
-			jsonScale = config.scale;
-			setGraphicSize(Std.int(width * jsonScale));
-			updateHitbox();
-		}
-
-		positionArray = config.position;
-
-		healthIcon = config.healthicon;
-		singDuration = config.sing_duration;
-		flipX = !!config.flip_x;
-		if(config.no_antialiasing) {
-			antialiasing = false;
-			noAntialiasing = true;
-		}
-
-		if(config.healthbar_colors != null && config.healthbar_colors.length > 2)
-			healthColorArray = config.healthbar_colors;
-
-		antialiasing = !noAntialiasing;
-		if(!ClientPrefs.data.globalAntialiasing) antialiasing = false;
-	}
-
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false)
 	{
 		super(x, y);
@@ -529,7 +447,7 @@ class Character extends FlxPerspectiveSprite
 			healthColorArray = config.healthbar_colors;
 
 		antialiasing = !noAntialiasing;
-		if(!ClientPrefs.globalAntialiasing) antialiasing = false;
+		if(!ClientPrefs.data.globalAntialiasing) antialiasing = false;
 	}
 
 	public function playAnim(AnimName:String, Force:Bool = false, Reversed:Bool = false, Frame:Int = 0):Void

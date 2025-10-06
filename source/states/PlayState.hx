@@ -405,7 +405,7 @@ class PlayState extends MusicBeatState
 
 		if (!stageData.hide_girlfriend)
 		{
-			gf = new Character(0, 0, gfVersion);
+			gf = new Character(0, 0, SONG.gfVersion);
 			startCharacterPos(gf);
 			gf.scrollFactor.set(0.95, 0.95);
 			if(gf.otherCharacters == null)
@@ -426,29 +426,6 @@ class PlayState extends MusicBeatState
 			else
 				for (character in gf.otherCharacters)
 					character.dance();
-
-			startCharacterLua(gf.curCharacter);
-
-			if(gfVersion == 'pico-speaker')
-			{
-				if(!ClientPrefs.lowQuality)
-				{
-					var firstTank:TankmenBG = new TankmenBG(20, 500, true);
-					firstTank.resetShit(20, 600, true);
-					firstTank.strumTime = 10;
-					tankmanRun.add(firstTank);
-
-					for (i in 0...TankmenBG.animationNotes.length)
-					{
-						if(FlxG.random.bool(16)) {
-							var tankBih = tankmanRun.recycle(TankmenBG);
-							tankBih.strumTime = TankmenBG.animationNotes[i][0];
-							tankBih.resetShit(500, 200 + FlxG.random.int(50, 100), TankmenBG.animationNotes[i][1] < 2);
-							tankmanRun.add(tankBih);
-						}
-					}
-				}
-			}
 		}
 
 		dad = new Character(0, 0, SONG.player2);
