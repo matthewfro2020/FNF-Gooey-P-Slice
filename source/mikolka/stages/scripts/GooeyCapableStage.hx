@@ -78,5 +78,6 @@ class GooeyCapableStage extends BaseStage
 						state.boyfriend.animation.callback = null;
 				}
 			}
+		}
 	}
 }
