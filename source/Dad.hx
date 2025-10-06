@@ -4,6 +4,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.util.FlxTimer;
+import objects.Character;
 
 using StringTools;
 
@@ -13,7 +14,7 @@ class Dad extends Character
 
 	public function new(x:Float, y:Float, ?char:String = 'dad')
 	{
-		super(x, y, char, false, false);
+		super(x, y, char, false);
 	}
 
 	//public var latexed = false;

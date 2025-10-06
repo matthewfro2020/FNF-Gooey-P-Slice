@@ -323,6 +323,10 @@ class Paths
 		return graph;
 	}
 
+	inline public static function getPreloadPath(file:String = '')
+	{
+		return 'assets/$file';
+	}
 
 	inline static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
