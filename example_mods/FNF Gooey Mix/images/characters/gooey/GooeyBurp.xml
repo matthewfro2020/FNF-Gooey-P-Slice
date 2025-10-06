@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="GooeyBurp.png">
+<SubTexture name="burp0000" x="0" y="0" width="317" height="320" frameX="-176" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0001" x="317" y="0" width="317" height="320" frameX="-176" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0002" x="634" y="0" width="314" height="320" frameX="-178" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0003" x="0" y="320" width="314" height="320" frameX="-178" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0004" x="634" y="0" width="314" height="320" frameX="-178" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0005" x="314" y="320" width="309" height="319" frameX="-183" frameY="-158" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0006" x="623" y="320" width="309" height="319" frameX="-183" frameY="-158" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0007" x="0" y="640" width="300" height="320" frameX="-190" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0008" x="300" y="640" width="300" height="320" frameX="-190" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0009" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0010" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0011" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0012" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0013" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0014" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0015" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0016" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0017" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0018" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0019" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0020" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0021" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0022" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0023" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0024" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0025" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0026" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0027" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0028" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0029" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+<SubTexture name="burp0030" x="600" y="640" width="298" height="320" frameX="-191" frameY="-157" frameWidth="600" frameHeight="600" />
+</TextureAtlas>

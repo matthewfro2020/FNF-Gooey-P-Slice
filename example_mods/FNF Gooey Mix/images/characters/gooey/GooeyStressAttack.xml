@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="GooeyStressAttack.png">
+<SubTexture name="attack0000" x="0" y="0" width="335" height="331" frameX="-445" frameY="-293" frameWidth="900" frameHeight="640" />
+<SubTexture name="attack0001" x="0" y="331" width="773" height="338" frameX="0" frameY="-286" frameWidth="900" frameHeight="640" />
+<SubTexture name="attack0002" x="0" y="669" width="292" height="266" frameX="-526" frameY="-358" frameWidth="900" frameHeight="640" />
+<SubTexture name="attack0003" x="0" y="669" width="292" height="266" frameX="-526" frameY="-358" frameWidth="900" frameHeight="640" />
+<SubTexture name="attack0004" x="0" y="935" width="285" height="265" frameX="-527" frameY="-359" frameWidth="900" frameHeight="640" />
+<SubTexture name="attack0005" x="0" y="935" width="285" height="265" frameX="-527" frameY="-359" frameWidth="900" frameHeight="640" />
+<SubTexture name="attack0006" x="0" y="1200" width="286" height="265" frameX="-527" frameY="-359" frameWidth="900" frameHeight="640" />
+</TextureAtlas>
