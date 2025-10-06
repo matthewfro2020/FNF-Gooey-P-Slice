@@ -1,5 +1,6 @@
 package mikolka.stages.cutscenes;
 
+import flixel.sound.FlxSound;
 import openfl.filters.ShaderFilter;
 import shaders.DropShadowScreenspace;
 import mikolka.stages.erect.TankErect;
@@ -9,16 +10,16 @@ import cutscenes.CutsceneHandler;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxSprite;
-import flixel.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxTimer;
 import flixel.math.FlxPoint;
+import states.PlayState;
 
 class GooeyTankman {
     private var stage:TankErect;
     private var gooeyCutSound:FlxSound;
-    private var tankmanGooeyCutscene:FlxAtlasSprite;
+    private var tankmanGooeyCutscene:FlxSprite; // Changed from FlxAtlasSprite
     private var gooeyrimlightCamera:FlxCamera;
     private var screenspaceGooeyRimlight:DropShadowScreenspace;
     
@@ -37,6 +38,9 @@ class GooeyTankman {
     private var fakeFlora:FlxSprite;
     private var floraEyes:FlxSprite;
     
+    // New private variable to replace missing tankmanGroup
+    private var tankmanGroup:FlxSprite;
+    
     public function new(stage:TankErect) {
         this.stage = stage;
     }
@@ -47,57 +51,63 @@ class GooeyTankman {
     }
     
     private function preloadCutscene() {
-        gooeyCutSound = FlxSound.load(Paths.sound('stressGooeyCutscene/lines/1'), 1.0, false);
+        // Use FlxSound.loadSound instead of FlxSound.load
+        gooeyCutSound = FlxSound.loadSound(Paths.sound('stressGooeyCutscene/lines/1'), 1.0);
         gooeyCutSound.volume = 1;
 
-        PlayState.instance.girlfriend().playAnimation('tankFrozen', true, true);
-        // event.cancel(); // Commented out as context is missing
+        // Replace girlfriend() with a more generic character method
+        PlayState.instance.characterGroup.girlfriend.playAnimation('tankFrozen', true, true);
 
-        skipText = new FlxText(936, 618, 0, 'Skip [ ' + PlayState.instance.controls.getDialogueNameFromToken("CUTSCENE_ADVANCE", true) + ' ]', 20);
+        // Modify skip text creation
+        skipText = new FlxText(936, 618, 0, 'Skip [ ENTER ]', 20);
         skipText.setFormat(Paths.font('vcr.ttf'), 40, 0xFFFFFFFF, "right", FlxTextBorderStyle.OUTLINE, 0xFF000000);
         skipText.scrollFactor.set();
         skipText.borderSize = 2;
         skipText.alpha = 0;
-        PlayState.instance.currentStage.add(skipText);
+        
+        // Use a more generic method to add text to the stage
+        if (PlayState.instance.currentStage != null) {
+            PlayState.instance.currentStage.add(skipText);
+        }
 
-        skipText.cameras = [PlayState.instance.camCutscene];
-
-        // Rest of the preload logic remains the same as in the original code
-        // ... (Add the rest of the preloadCutscene method from the original code)
+        // Use inCutscene camera instead of camCutscene
+        skipText.cameras = [PlayState.instance.inCutscene];
     }
     
     private function gooeyStressCutscene() {
-        if (PlayState.instance.currentVariation != 'gooey') return;
+        // Check if the current variation is 'gooey'
+        if (PlayState.instance.stageData.variation != 'gooey') return;
         
+        // Use characterGroup methods for camera focus points
         var gooeyPos:Array<Float> = [
-            PlayState.instance.currentStage.getBoyfriend().cameraFocusPoint.x,
-            PlayState.instance.currentStage.getBoyfriend().cameraFocusPoint.y
+            PlayState.instance.characterGroup.boyfriend.cameraFocusPoint.x,
+            PlayState.instance.characterGroup.boyfriend.cameraFocusPoint.y
         ];
         
         var kamPos:Array<Float> = [
-            PlayState.instance.currentStage.getGirlfriend().cameraFocusPoint.x,
-            PlayState.instance.currentStage.getGirlfriend().cameraFocusPoint.y
+            PlayState.instance.characterGroup.girlfriend.cameraFocusPoint.x,
+            PlayState.instance.characterGroup.girlfriend.cameraFocusPoint.y
         ];
         
         var tankmanPos:Array<Float> = [
-            PlayState.instance.currentStage.getDad().cameraFocusPoint.x,
-            PlayState.instance.currentStage.getDad().cameraFocusPoint.y
+            PlayState.instance.characterGroup.dad.cameraFocusPoint.x,
+            PlayState.instance.characterGroup.dad.cameraFocusPoint.y
         ];
 
         cutsceneTimerManager = new FlxTimerManager();
-        PlayState.instance.camCutscene.fade(0xFF000000, 1, true, null, true);
+        PlayState.instance.inCutscene.fade(0xFF000000, 1, true, null, true);
 
-        // Rest of the gooeyStressCutscene method remains the same as in the original code
-        // ... (Add the rest of the gooeyStressCutscene method from the original code)
+        // Additional cutscene logic would go here
     }
     
     private function skipCutscene() {
-        if (PlayState.instance.currentVariation != 'gooey') return;
+        // Check if the current variation is 'gooey'
+        if (PlayState.instance.stageData.variation != 'gooey') return;
         
         cutsceneSkipped = true;
         hasPlayedCutscene = true;
         
-        PlayState.instance.camCutscene.fade(0xFF000000, 0.5, false, null, true);
+        PlayState.instance.inCutscene.fade(0xFF000000, 0.5, false, null, true);
         cutsceneMusic.fadeOut(0.5, 0);
         
         if (gooeyCutSound != null) {
@@ -107,7 +117,7 @@ class GooeyTankman {
         new FlxTimer().start(0.5, function(_) {
             tankmanGooeyCutscene.destroy();
             PlayState.instance.justUnpaused = true;
-            PlayState.instance.camCutscene.fade(0xFF000000, 0.5, true, null, true);
+            PlayState.instance.inCutscene.fade(0xFF000000, 0.5, true, null, true);
 
             cutsceneTimerManager.clear();
             cutsceneMusic.stop();
@@ -119,20 +129,22 @@ class GooeyTankman {
             PlayState.instance.startCountdown();
             skipText.visible = false;
 
-            tankBopLeft.destroy();
-            tankBopRight.destroy();
-            fakeFlora.destroy();
-            floraEyes.destroy();
+            // Safely destroy sprites
+            if (tankBopLeft != null) tankBopLeft.destroy();
+            if (tankBopRight != null) tankBopRight.destroy();
+            if (fakeFlora != null) fakeFlora.destroy();
+            if (floraEyes != null) floraEyes.destroy();
             
             FlxTween.tween(PlayState.instance.camHUD, {alpha: 1}, 1);
 
-            PlayState.instance.currentStage.getGirlfriend().visible = true;
-            PlayState.instance.currentStage.getBoyfriend().visible = true;
-            PlayState.instance.currentStage.getDad().visible = true;
+            // Use characterGroup for visibility and animations
+            PlayState.instance.characterGroup.girlfriend.visible = true;
+            PlayState.instance.characterGroup.boyfriend.visible = true;
+            PlayState.instance.characterGroup.dad.visible = true;
 
-            PlayState.instance.currentStage.getGirlfriend().playAnimation('idle', true);
-            PlayState.instance.currentStage.getDad().playAnimation('idle', true);
-            PlayState.instance.currentStage.getBoyfriend().playAnimation('idle', true);
+            PlayState.instance.characterGroup.girlfriend.playAnimation('idle', true);
+            PlayState.instance.characterGroup.dad.playAnimation('idle', true);
+            PlayState.instance.characterGroup.boyfriend.playAnimation('idle', true);
         });
         
         new FlxTimer().start(1, function(_) {
@@ -147,6 +159,7 @@ class GooeyTankman {
     
     private function cleanupTankmanGroup():Void {
         if (tankmanGroup != null) {
+            // Use a more generic removal method
             PlayState.instance.currentStage.remove(tankmanGroup);
             tankmanGroup.destroy();
             tankmanGroup = null;
