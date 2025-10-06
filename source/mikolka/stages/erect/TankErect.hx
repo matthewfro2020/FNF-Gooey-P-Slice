@@ -26,6 +26,7 @@ class TankErect extends BaseStage {
 	var tankmanRun:FlxTypedGroup<TankmenBG>;
 	var cutscene:PicoTankman;
 	var pico_stage:PicoCapableStage;
+
 	private var gooeyCutSound:FlxSound;
 	private var tankmanGooeyCutscene:FlxSprite;
 	private var gooeyrimlightCamera:FlxCamera;
@@ -70,7 +71,7 @@ class TankErect extends BaseStage {
 
 		// Use a more generic method to add text to the stage
 		if (game.stages != null) {
-			game.stages.add(skipText);
+			add(skipText);
 		}
 
 		// Use game.camHUD instead of direct camera access
@@ -83,10 +84,6 @@ class TankErect extends BaseStage {
 	}
 
 	private function skipCutscene() {
-		// Check variation using game method
-		if (game.stageData.variation != 'gooey')
-			return;
-
 		cutsceneSkipped = true;
 		hasPlayedCutscene = true;
 
@@ -153,11 +150,10 @@ class TankErect extends BaseStage {
 	}
 
 	private function cleanupTankmanGroup():Void {
-		if (game.stages != null && tankmanRun != null) {
-			game.stages.remove(tankmanRun);
-			tankmanRun.destroy();
-			tankmanRun = null;
-		}
+		if (tankmanRun != null) {
+	        	tankmanRun.destroy();
+                        tankmanRun = null;
+                }
 	}
 
 	public function new() {
