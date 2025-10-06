@@ -17,7 +17,7 @@ class GooeyCapableStage extends BaseStage
 	final MIN_BLINK_DELAY:Int = 3;
 	final MAX_BLINK_DELAY:Int = 7;
 	final VULTURE_THRESHOLD:Float = 0.5;
-	public final onABotInit:FlxSignal<GooeyCapableStage->Void> = new FlxSignal();
+	public final onABotInit:FlxSignal<Void> = new FlxSignal();
 
 	public static var instance:GooeyCapableStage = null;
 	public static var NENE_LIST = ['flora','flora-pixel', 'flora-christmas', 'flora-dark'];
