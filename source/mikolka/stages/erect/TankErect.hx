@@ -13,7 +13,6 @@ import mikolka.stages.cutscenes.GooeyTankman;
 import openfl.filters.ShaderFilter;
 import shaders.DropShadowScreenspace;
 import mikolka.stages.scripts.PicoCapableStage;
-import mikolka.stages.scripts.GooeyCapableStage;
 import mikolka.compatibility.VsliceOptions;
 import shaders.DropShadowShader;
 

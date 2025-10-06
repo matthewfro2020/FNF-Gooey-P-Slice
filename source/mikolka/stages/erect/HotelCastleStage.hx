@@ -114,7 +114,7 @@ class HotelCastleStage extends BaseStage {
 
 		var rim = new DropShadowShader();
 		rim.setAdjustColor(0, 0, 0, 0);
-		rim.color = 0xFF423427;g
+		rim.color = 0xFF423427;
 		stageCharacter.shader = rim;
 		rim.attachedSprite = stageCharacter;
 		rim.threshold = -1;
