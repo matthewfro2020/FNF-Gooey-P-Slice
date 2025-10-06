@@ -1,6 +1,6 @@
 package mikolka.stages.erect;
 
-import states.stages.objects.;
+import states.stages.objects.*;
 import flixel.FlxG;
 import flixel.FlxCamera;
 import flixel.tweens.FlxTween;
@@ -114,7 +114,7 @@ class HotelCastleStage extends BaseStage {
 
 		var rim = new DropShadowShader();
 		rim.setAdjustColor(0, 0, 0, 0);
-		rim.color = 0xFF423427;
+		rim.color = 0xFF423427;g
 		stageCharacter.shader = rim;
 		rim.attachedSprite = stageCharacter;
 		rim.threshold = -1;
@@ -130,11 +130,6 @@ class HotelCastleStage extends BaseStage {
 			default:
 				rim.angle = 90;
 				rim.threshold = 0.1;
-				if (stageCharacter != null) {
-					stageCharacter.animation.callback = function(anim, frame, index) {
-						rim.updateFrameInfo(stageCharacter.animation.curAnim.frames[frame]);
-					}
-				}
 		}
 	}
 
@@ -265,7 +260,7 @@ class HotelCastleStage extends BaseStage {
 
 	// Helper function to create animated BGSprite
 	private function createAnimatedBGSprite(key:String, x:Float, y:Float, animPrefix:String, frameRate:Int):BGSprite {
-		var sprite = new BGSprite(key, x, y, true, 0, 0, true);
+		var sprite = new BGSprite(key, x, y, 0, 0, true);
 		sprite.animation.addByPrefix(animPrefix, animPrefix, frameRate, true);
 		sprite.animation.play(animPrefix, true);
 		return sprite;

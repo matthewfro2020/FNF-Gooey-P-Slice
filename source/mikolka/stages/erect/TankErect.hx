@@ -13,10 +13,9 @@ import mikolka.stages.cutscenes.GooeyTankman;
 import openfl.filters.ShaderFilter;
 import shaders.DropShadowScreenspace;
 import mikolka.stages.scripts.PicoCapableStage;
-import mikolka.stages.scripts.GooeyCapableStage;
+import mikolka.stages.scripts.PicoCapableStage.GooeyCapableStage;
 import mikolka.compatibility.VsliceOptions;
 import shaders.DropShadowShader;
-import backend.BaseStage;
 
 class TankErect extends BaseStage
 {
