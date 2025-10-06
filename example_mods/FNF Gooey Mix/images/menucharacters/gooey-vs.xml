@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="gooey-vs.png">
+<SubTexture name="idle0000" x="0" y="0" width="303" height="306" frameX="-114" frameY="-171" frameWidth="600" frameHeight="600" />
+<SubTexture name="idle0001" x="303" y="0" width="302" height="305" frameX="-116" frameY="-172" frameWidth="600" frameHeight="600" />
+<SubTexture name="idle0002" x="0" y="306" width="298" height="315" frameX="-119" frameY="-162" frameWidth="600" frameHeight="600" />
+<SubTexture name="idle0003" x="298" y="306" width="298" height="318" frameX="-118" frameY="-159" frameWidth="600" frameHeight="600" />
+<SubTexture name="idle0004" x="0" y="624" width="298" height="320" frameX="-117" frameY="-157" frameWidth="600" frameHeight="600" />
+</TextureAtlas>
