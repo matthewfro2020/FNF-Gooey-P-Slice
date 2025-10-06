@@ -203,11 +203,14 @@ class Character extends FlxPerspectiveSprite
 		animOffsets = new Map<String, Array<Dynamic>>();
 		this.isPlayer = isPlayer;
 		changeCharacter(character);
-		
-		switch(curCharacter)
+
+		switch (curCharacter)
 		{
+			//case 'your character name in case you want to hardcode them instead':
+
 			default:
 				var characterPath:String = 'characters/' + curCharacter + '.json';
+
 
 				#if MODS_ALLOWED
 				var path:String = Paths.modFolders(characterPath);
@@ -223,7 +226,6 @@ class Character extends FlxPerspectiveSprite
 				{
 					path = Paths.getPreloadPath('characters/' + DEFAULT_CHARACTER + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
 				}
-
 
 				#if MODS_ALLOWED
 				var rawJson = File.getContent(path);
@@ -269,6 +271,17 @@ class Character extends FlxPerspectiveSprite
 						spriteType = "texture";
 					}
 
+					switch (spriteType){
+							
+						case "packer":
+							frames = Paths.getPackerAtlas(json.image);
+							
+						case "sparrow":
+								frames = Paths.getSparrowAtlas(json.image);
+							
+						case "texture":
+							frames = AtlasFrameMaker.construct(json.image);
+					}
 					imageFile = json.image;
 	
 					if(json.scale != 1) {
@@ -333,11 +346,12 @@ class Character extends FlxPerspectiveSprite
 					}
 					cameraPosition = json.camera_position;
 					//trace('Loaded file to character ' + curCharacter);
+					
+					coolTrail = new FlxPerspectiveTrail(this, null);	
 				}
 				else
 					loadNamedConfiguration(json);
 		}
-
 		originalFlipX = flipX;
 
 		if(animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
@@ -440,9 +454,8 @@ class Character extends FlxPerspectiveSprite
 		{
 			case 'pico-blazin', 'darnell-blazin':
 				skipDance = true;
-		}
-	}
-
+                }
+        }
 	public function changeCharacter(character:String)
 	{
 		animationsArray = [];
