@@ -14,7 +14,8 @@ haxelib git hxcpp https://github.com/Psych-Slice/hxcpp.git a6d5f5572dd4f6d8f636c
 haxelib install flixel-addons 3.3.2 --quiet --skip-dependencies
 haxelib install flixel-tools 1.5.1 --quiet --skip-dependencies
 haxelib install hscript-iris 1.1.3 --quiet 
-haxelib install tjson 1.4.0 --quiet 
+haxelib install tjson 1.4.0 --quiet
+haxelib install lime 8.1.2 --quiet --skip-dependencie 
 
 #Specific
 haxelib git lime https://github.com/Psych-Slice/lime-mobile.git --quiet # tracks lime 8.2.2
