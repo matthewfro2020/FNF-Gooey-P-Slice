@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tankman_done.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="done0000" x="8" y="8" width="483" height="583" frameX="-1" frameY="-1" frameWidth="522" frameHeight="584"/>
+	<SubTexture name="done0001" x="499" y="8" width="483" height="583" frameX="-1" frameY="-1" frameWidth="522" frameHeight="584"/>
+	<SubTexture name="done0002" x="990" y="8" width="515" height="583" frameX="0" frameY="-1" frameWidth="522" frameHeight="584"/>
+	<SubTexture name="done0003" x="1513" y="8" width="515" height="584" frameX="0" frameY="0" frameWidth="522" frameHeight="584"/>
+	<SubTexture name="done0004" x="8" y="600" width="521" height="584" frameX="0" frameY="0" frameWidth="522" frameHeight="584"/>
+	<SubTexture name="done0005" x="8" y="600" width="521" height="584" frameX="0" frameY="0" frameWidth="522" frameHeight="584"/>
+	<SubTexture name="done0006" x="537" y="600" width="522" height="584"/>
+	<SubTexture name="done0007" x="537" y="600" width="522" height="584"/>
+	<SubTexture name="done0008" x="1067" y="600" width="522" height="584"/>
+	<SubTexture name="done0009" x="1067" y="600" width="522" height="584"/>
+	<SubTexture name="done0010" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0011" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0012" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0013" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0014" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0015" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0016" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0017" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0018" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0019" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0020" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0021" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0022" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0023" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0024" x="8" y="1192" width="522" height="584"/>
+	<SubTexture name="done0025" x="8" y="1192" width="522" height="584"/>
+</TextureAtlas>
