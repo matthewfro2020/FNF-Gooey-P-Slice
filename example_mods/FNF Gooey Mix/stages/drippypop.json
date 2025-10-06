@@ -1,0 +1,27 @@
+{
+  "directory": "gooeyMix/extra/drip",
+  "defaultZoom": 0.9,
+  "stageUI": "",
+
+  "boyfriend": [1350, 320],
+  "girlfriend": [1030, 363],
+  "opponent": [700, 250],
+  "hide_girlfriend": false,
+
+  "camera_boyfriend": [-200, -100],
+  "camera_opponent": [200, -20],
+  "camera_girlfriend": [0, 0],
+  "camera_speed": 1,
+
+  "preload": {
+    "gooeyMix/extra/drip/ngErect": 3,
+    "gooeyMix/extra/drip/drippersErect": 3,
+    "gooeyMix/extra/drip/erectShade": 2
+  },
+
+  "_editorMeta": {
+    "dad": "dad",
+    "boyfriend": "bf",
+    "gf": "gf"
+  }
+}

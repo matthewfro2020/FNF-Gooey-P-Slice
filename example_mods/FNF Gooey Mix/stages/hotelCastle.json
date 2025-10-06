@@ -1,0 +1,34 @@
+{
+  "directory": "gooeyMix/week60037/hotelCastle",
+  "defaultZoom": 0.7,
+  "stageUI": "",
+
+  "boyfriend": [2000, 1050],
+  "girlfriend": [1570, 950],
+  "opponent": [1200, 1050],
+  "hide_girlfriend": false,
+
+  "camera_boyfriend": [-200, -150],
+  "camera_opponent": [100, -100],
+  "camera_girlfriend": [-10, 0],
+  "camera_speed": 1,
+
+  "preload": {
+    "gooeyMix/week60037/hotelCastle/backWall": 3,
+    "gooeyMix/week60037/hotelCastle/projWall": 3,
+    "gooeyMix/week60037/hotelCastle/morphoStage": 3,
+    "gooeyMix/week60037/hotelCastle/lantern": 2,
+    "gooeyMix/week60037/hotelCastle/candle": 2,
+    "gooeyMix/week60037/hotelCastle/candleFlame": 2,
+    "gooeyMix/week60037/hotelCastle/lighting": 2,
+    "gooeyMix/week60037/hotelCastle/lighting2": 2,
+    "gooeyMix/week60037/hotelCastle/lighting3": 2,
+    "gooeyMix/week60037/hotelCastle/extraSpotlight": 2
+  },
+
+  "_editorMeta": {
+    "dad": "dad",
+    "boyfriend": "bf",
+    "gf": "gf"
+  }
+}
