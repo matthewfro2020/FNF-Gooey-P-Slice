@@ -13,7 +13,7 @@ import mikolka.stages.cutscenes.GooeyTankman;
 import openfl.filters.ShaderFilter;
 import shaders.DropShadowScreenspace;
 import mikolka.stages.scripts.PicoCapableStage;
-import mikolka.stages.scripts.PicoCapableStage.GooeyCapableStage;
+import mikolka.stages.scripts.GooeyCapableStage;
 import mikolka.compatibility.VsliceOptions;
 import shaders.DropShadowShader;
 
@@ -25,7 +25,6 @@ class TankErect extends BaseStage
 	var tankmanRun:FlxTypedGroup<TankmenBG>;
 	var cutscene:PicoTankman;
 	var pico_stage:PicoCapableStage;
-	var gooey_stage:GooeyCapableStage;
 
 	public function new() {
 		if (songName == "stress-(pico-mix)") pico_stage = new PicoCapableStage(true);
@@ -71,12 +70,9 @@ class TankErect extends BaseStage
 		}
 		if (songName == "stress-(gooey-mix)")
 		{
-			pico_stage.create();
-			game.stages.remove(pico_stage);
-			game.stages.insert(1,pico_stage);
-			StickerSubState.STICKER_SET = "stickers-set-2"; //? yep, it's pico time!
+			StickerSubState.STICKER_SET = "stickers-set-extra"; //? yep, it's pico time!
 			this.cutscene = new GooeyTankman(this);
-			if(!seenCutscene) setStartCallback(VideoCutscene.playVideo.bind('stressPicoCutscene',startCountdown));
+			if(!seenCutscene) setStartCallback(VideoCutscene.playVideo.bind('',startCountdown));
 			setEndCallback(cutscene.playCutscene);
 		}
 		
